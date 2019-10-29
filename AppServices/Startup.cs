@@ -11,6 +11,9 @@ using AppServices.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using IdentityServer4.EntityFramework.Entities;
+using IdentityServer4.Models;
+using AppServices.Utils;
 
 namespace AppServices
 {
@@ -35,7 +38,6 @@ namespace AppServices
 
             services.AddIdentityServer()
                 .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
-
             services.AddAuthentication()
                 .AddIdentityServerJwt();
             services.AddControllersWithViews();
