@@ -8,5 +8,6 @@ namespace AppServices.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public virtual ICollection<App> Apps { get; set; }
     }
 }

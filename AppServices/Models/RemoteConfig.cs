@@ -11,10 +11,10 @@ namespace AppServices.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long ID { get; set; }
-        public App App { get; set; }
-       public long AppID { get; set; }
-        public string Key { get; set; }
-        public string  Value { get; set; }
+        public long     ID      { get; set; }
+        public App      App     { get; set; }
+        public long     AppID   { get; set; }
+        public string   Key     { get; set; }
+        public string   Value   { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace AppServices.Models
     public abstract class BaseModel
     {
         public DateTime CreatedAt { get; set; }
-        public DateTime UpdateAt { get; set; }
+        public DateTime UpdateAt  { get; set; }
     }
 }

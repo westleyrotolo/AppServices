@@ -11,15 +11,18 @@ namespace AppServices.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long ID { get; set; }
-        public string Name { get; set; }
-        public ApplicationType ApplicationType { get; set; }
+        public long             ID                { get; set; }
+        public string           Name              { get; set; }
+        public ApplicationType  ApplicationType   { get; set; }
+        public ApplicationUser  ApplicationUser   { get; set; }
+        public string           ApplicationUserID { get; set; }
         public virtual ICollection<RemoteConfig> RemoteConfigs { get; set; }
     }
     public enum ApplicationType
     {
         Android, 
         iOS,
-        Web
+        Web,
+        Desktop
     }
 }
